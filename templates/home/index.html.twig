@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+
+{% if nombre_de_numeros_gagnants > 2 or numero_chance_gagne > 0 %}
+"Vous avez Gagné" 
+{% else %}
+"Vous avez perdu"
+{% endif %}
+
+{% endblock %}
